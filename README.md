@@ -23,6 +23,8 @@ Mon Dec 18 17:18:24 2017 -0800: npm init and added packages
 Mon Dec 18 17:38:51 2017 -0800: Added test in server.js
 Tue Dec 19 12:24:13 2017 -0800: Added the endpoint to handle book requests
 
+Tue Dec 19 12-20-2017 1:50pm - Application in building process
+
 ## Credits and Collaborations
 HandlebarsJS
 jQuery
