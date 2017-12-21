@@ -1,7 +1,7 @@
 # Server Repository for Books Application
 
 **Author**: Liza Oh & Steve Carpenter
-**Version**: 1.0.0
+**Version**: 1.0.1
 
 ## Overview
 Server side code for the Books application.
@@ -22,8 +22,9 @@ Mon Dec 18 17:05:40 2017 -0800: Added initial code to the server.js file
 Mon Dec 18 17:18:24 2017 -0800: npm init and added packages
 Mon Dec 18 17:38:51 2017 -0800: Added test in server.js
 Tue Dec 19 12:24:13 2017 -0800: Added the endpoint to handle book requests
-
 Tue Dec 19 12-20-2017 1:50pm - Application in building process
+Thu Dec 21 10:22:50 2017 -0800: added body-parser
+Thu Dec 21 11:20:54 2017 -0800: added body parser
 
 ## Credits and Collaborations
 HandlebarsJS
