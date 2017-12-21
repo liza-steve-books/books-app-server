@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/liza-steve-books/books-app-server#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "page": "^1.7.1",

@@ -35,5 +35,15 @@ app.get('/api/v1/books/:id', (request, response) => {
     .catch(console.error);
 });
 
+app.post('/api/v1/books', (request, response) => {
+  console.log('request.params',request.params);
+  client.query(
+    'INSERT INTO books (author, title, isbn, image_url, description) VALUES($1, $2, $3, $4, $5) ON CONFLICT DO NOTHING',
+    [request.params.author, request.params.title, request.params.isbn, request.params.image_url, request.params.description]
+  )
+    .then(() => response.send('insert complete'))
+    .catch(console.error);
+});
+
 app.all('*', (req, res) => res.redirect(CLIENT_URL));
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
