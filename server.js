@@ -4,6 +4,7 @@
 const express = require('express');
 const cors = require('cors');
 const pg = require('pg');
+const bodyParser = require('body-parser');
 
 // App Setup
 const app = express();
@@ -16,6 +17,8 @@ client.connect();
 client.on('error', err => console.error(err));
 
 app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/api/v1/books', (request, response) => {
   client.query(
@@ -36,10 +39,9 @@ app.get('/api/v1/books/:id', (request, response) => {
 });
 
 app.post('/api/v1/books', (request, response) => {
-  console.log('request.params',request.params);
   client.query(
     'INSERT INTO books (author, title, isbn, image_url, description) VALUES($1, $2, $3, $4, $5) ON CONFLICT DO NOTHING',
-    [request.params.author, request.params.title, request.params.isbn, request.params.image_url, request.params.description]
+    [request.body.author, request.body.title, request.body.isbn, request.body.image_url, request.body.description]
   )
     .then(() => response.send('insert complete'))
     .catch(console.error);
