@@ -49,7 +49,7 @@ app.post('/api/v1/books', (request, response) => {
 
 app.delete('/api/v1/books/:id', (req, res) => {
   client.query(`DELETE FROM books WHERE book_id=$1`, [req.params.id])
-    .then(() => res.status(204).redirect(CLIENT_URL))
+    .then(() => res.status(204))
     .catch(err => {
       console.error(err);
       res.status(400).send('Bad Request; Book ID does not exist');
