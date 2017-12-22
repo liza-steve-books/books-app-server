@@ -1,7 +1,7 @@
 # Server Repository for Books Application
 
 **Author**: Liza Oh & Steve Carpenter
-**Version**: 1.0.1
+**Version**: 1.0.2
 
 ## Overview
 Server side code for the Books application.
