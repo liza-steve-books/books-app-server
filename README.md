@@ -25,6 +25,10 @@ Tue Dec 19 12:24:13 2017 -0800: Added the endpoint to handle book requests
 Tue Dec 19 12-20-2017 1:50pm - Application in building process
 Thu Dec 21 10:22:50 2017 -0800: added body-parser
 Thu Dec 21 11:20:54 2017 -0800: added body parser
+Fri Dec 22 08:54:46 2017 -0800: Added delete endpoint
+Fri Dec 22 09:31:28 2017 -0800: Removed reroute
+Fri Dec 22 11:47:04 2017 -0800: Fixed sendStatus call in server.js
+Fri Dec 22 12:32:59 2017 -0800: Added and tested put/update endpoint for Books.
 
 ## Credits and Collaborations
 HandlebarsJS
